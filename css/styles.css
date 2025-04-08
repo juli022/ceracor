@@ -104,16 +104,17 @@ nav ul li a {
 
 .hero-text {
     position: absolute;
-    bottom: 10%;
-    left: 50%;
+    bottom: 3%;
+    left: 28%;
     transform: translateX(-50%);
     color: white;
     font-size: 2.25rem;
     font-weight: bold;
-    text-align: center;
+    text-align:right;
     text-transform: uppercase;
     width: 80%;
     text-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.7);
+    letter-spacing: 0.09em;
 }
 
 .line {
@@ -143,19 +144,23 @@ nav ul li a {
     flex-wrap: wrap;
     text-align: center;
 }
-
 .card1, .card2, .card3 {
     flex: 1;
-    max-width: 18.75rem;
+    max-width: 100%;
     text-align: center;
+    height: auto;
+    margin-bottom: 15px;
 }
 
-.card1 img, .card2 img {
-    width: 100%;
+.card1 img, .card2 img, .imagen {
+    width: 300px;
     height: 12.5rem;
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    width: 276px !important;
+    height: 276px !important;
+    object-fit: cover;
 }
 
 .card3 {
@@ -165,6 +170,7 @@ nav ul li a {
     padding: 0.9375rem;
 }
 
+  
 .boton {
     display: block;
     margin: 1.25rem auto;
@@ -174,10 +180,10 @@ nav ul li a {
     color: white;
     border: none;
     border-radius: 0.3125rem;
-    font-size: 1.313rem;
+    font-size: 1.1rem;
     cursor: pointer;
-  width: 60.938rem;
-    height: 2.813rem;
+  width: 60.9375rem;
+    height: 2.8125rem;
     text-align: center;
     font-family:'ITCAvantGardeProBold';
     font-weight: bold;
@@ -188,17 +194,24 @@ nav ul li a {
     flex: 1;
     max-width: 18.75rem;
     text-align: center;
+  
 }
 
 .cards .imagen {
     width: 100%;
     height: 12.5rem;
-    object-fit: cover;
     margin-bottom: 0.625rem;
+    
 }
-
-.colores{
-    background-color: ;
+h4 {
+    font-family: 'Century Gothic bold';
+    font-size: 25x;
+    font-weight: bold;
+}
+.subtitulo{
+    font-family: 'Century Gothic bold';
+    font-size: 44px;
+    font-weight: bold;
 }
 h3 {
     font-size: 2.75rem;
@@ -208,10 +221,10 @@ h5{
     font-size: 2rem;
     font-family:'Century Gothic' ;
 }
-p .card-text{
+p {
     font-family: 'Century Gothic';
     font-size: 1.063rem;
-    text-align: left;
+    
 }
 
 .text-start{
@@ -258,12 +271,12 @@ form input[type="email"],
 form select {
     width: 100%;
     padding: 0.6rem 0.75rem;
-    border-radius: 0.375rem;
     border: 1px solid #ccc;
     margin-bottom: 1rem;
-    box-sizing: border-box;
+    border-radius: .25rem;
     font-size: 0.95rem;
 }
+
 
 .checkbox-group {
     display: flex;
@@ -271,6 +284,7 @@ form select {
     align-items: center;
     gap: 1.5rem;
     margin: 1.5rem 0;
+    
 }
 
 .checkbox-group label {
