@@ -64,31 +64,44 @@ header {
 .menu.active {
     display: flex;
 }
+.navbar{
+    max-width: 1050px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  
+   
 
-nav {
-    z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    display: inline-block;
-    gap: 1.25rem;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
-.logo-img, .logo-img-right{
+.logo-img, .logo-img-right {
     max-height: 40px;
-    width: auto;
+    margin-left: 0; /* si no es necesario, dejalo en 0 */
+    margin-right: 0;
+}
+
+.navbar-brand {
+    margin: 0 !important; /* asegúrate de que no haya margen de bootstrap */
+    padding: 0 !important;
+}
+
+.navbar-nav {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.navbar .container-fluid {
+    gap: 0; /* por si hay espacio automático entre elementos */
+}
+.nav-link {
+    padding: 0.25rem 0.5rem; /* más compacto que el padding por defecto */
+}
+a{
+    font-family: 'Century Gothic bold';
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .hero {
@@ -108,18 +121,22 @@ nav ul li a {
     left: 28%;
     transform: translateX(-50%);
     color: white;
-    font-size: 2.25rem;
+    font-size: 43px;
     font-weight: bold;
     text-align:right;
     text-transform: uppercase;
     width: 80%;
     text-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.7);
     letter-spacing: 0.09em;
+    font-family: 'Century Gothic';
+    margin-bottom: 0.3125rem;
+    line-height: 1;
 }
 
 .line {
     display: block;
-    margin-bottom: 0.3125rem;
+    margin-bottom: 5px;
+    
 }
 
 .asesoramiento {
@@ -133,6 +150,14 @@ nav ul li a {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+   
 }
 
 .cards-container {
@@ -174,12 +199,12 @@ nav ul li a {
 .boton {
     display: block;
     margin: 1.25rem auto;
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 0.5rem 1rem;
     background-color: #3eb2ae;
     color: white;
     border: none;
-    border-radius: 0.3125rem;
+    border-radius: 15px;
     font-size: 1.1rem;
     cursor: pointer;
   width: 60.9375rem;
@@ -188,6 +213,7 @@ nav ul li a {
     font-family:'ITCAvantGardeProBold';
     font-weight: bold;
     letter-spacing: 2px;
+    
 }
 
 .cards {
@@ -205,21 +231,25 @@ nav ul li a {
 }
 h4 {
     font-family: 'Century Gothic bold';
-    font-size: 25x;
+    font-size: 25px;
     font-weight: bold;
 }
 .subtitulo{
     font-family: 'Century Gothic bold';
     font-size: 44px;
     font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    line-height: 1;
 }
 h3 {
     font-size: 2.75rem;
 
 }
 h5{
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-family:'Century Gothic' ;
+   font-style: bold;
 }
 p {
     font-family: 'Century Gothic';
@@ -459,6 +489,11 @@ h2 {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
     z-index: 1000;
     transition: background 0.3s;
+    width: 3.75rem;
+    height: 3.75rem;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
