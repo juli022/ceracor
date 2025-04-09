@@ -506,6 +506,7 @@ h2 {
     .cards-container {
         flex-direction: column;
         gap: 2rem;
+        align-items: center;
     }
 
     .cards {
@@ -558,13 +559,7 @@ h2 {
         height: auto;
     }
 
-    .card1 img, .card2 img, .card3 img {
-        width: 100%;
-        height: auto;
-        max-height: 70vh;
-        object-fit: cover;
-    }
-    
+   
 
     .cards {
         flex-direction: column;
